@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-100 flex items-center justify-center h-screen">
+
+  <!-- Card Container -->
+  <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full">
+    <!-- Icon -->
+    <div class="flex justify-center mb-4">
+      <img src="img.webp" alt="Currency Icon" class="w-16 h-16">
+    </div>
+    <!-- Title -->
+    <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">CURRENCY CONVERTER</h1>
+    
+    <!-- Amount Input -->
+    <label for="amount" class="block text-gray-700 font-semibold mb-2">Amount:</label>
+    <input 
+      type="number" 
+      id="amount" 
+      placeholder="100" 
+      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 mb-4"
+    />
+    
+    <!-- Dropdowns -->
+    <div class="flex gap-4 mb-6 items-center">
+      <img class="fromImg" src="" alt="">
+      <select class="w-1/2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 select_from">
+        <option>Country</option>
+
+      </select>
+      <i class="fa-solid fa-arrow-right"></i>
+      <img class="toImg" src="" alt="">
+
+      <select class="w-1/2 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 select_to accordion">
+        <option>Country</option>
+      </select>
+    </div>
+
+    <!-- Convert Button -->
+     <div class="money my-3"></div>
+    <button 
+      class="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 converter-btn"
+    >
+      Convert
+    </button>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
